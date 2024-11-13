@@ -1,20 +1,17 @@
 using System;
 
-class MainClass
+class Class1
 {
     public static void Main(string[] args)
     {
 
-        const string MyName = "Jane";
-
-        Console.WriteLine(MyName);
-
-        Console.WriteLine("\t Привет Мир");
-        Console.WriteLine("\t Мне 27 лет");
-        Console.WriteLine("\t My name is \n {0}", MyName);
-        Console.WriteLine("\u0040");
-        Console.ReadLine("\x23");
-        Console.ReadKey();
+        Console.Writeline("Введите имя: ");
+        var name = Console.ReadLine();
+        Console.Writeline("Введите возраст: ");
+        var age = Convert.ToInt32(Console.ReadLine());
+        Console.Writeline("Введите дату рождения: ");
+        var birthdate = Console.ReadLine();
+        Console.WriteLine("Ваше имя {0}, Вас возраст {1} лет, Вы родились {2}", name, age, birthdate);
 
     }
 }
