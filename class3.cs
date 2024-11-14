@@ -1,21 +1,34 @@
 using System;
 
-class Class3
+class MainClass
 {
     public static void Main(string[] args)
     {
-        DaysOfWeek MyFavoriteDay;
+        Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
-        MyFavoriteDay = DaysOfWeek.Friday;
+        var color = Console.ReadLine();
 
-        Console.WriteLine(MyFavoriteDay);
+        if (color == "red")
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is red!");
+        }
+
+        else if (color == "green")
+        {
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is green!");
+        }
+        else
+        {
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine("Your color is cyan!");
+        }
     }
-}
-
-enum DaysOfWeek : byte
-{
-    Tuesday,
-    Monday,
-    Wednesday,
-    Friday
 }
